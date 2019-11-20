@@ -1,0 +1,69 @@
+
+.rectangle-first {
+    background-color: lightpink;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.rectangle-second {
+    background-color: cornsilk;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+
+#swordman {
+    background: url("img/sword-man.png");
+    width: 198.75px;
+    height: 254px;
+    animation: walk 0.7s steps(4) infinite, swordman-running 10s steps(100) infinite;
+}
+
+#monster:before {
+    font-size: 30px;
+    color: red;
+    display: block;
+}
+
+@keyframes walk {
+    100% {
+        background-position: -795px;
+    }
+}
+
+@keyframes swordman-running {
+    100% {
+        margin-left: 1500px
+    }
+}
+
+
+#girl {
+    background: url("img/girl.png");
+    width: 256px;
+    height: 256px;
+    animation: run 0.7s steps(6) infinite, girl-running 10s steps(100) infinite;
+}
+
+#girl:before {
+    font-size: 30px;
+    display: block;
+    content: "";
+}
+
+@keyframes run {
+    100% {
+        background-position: 1536px;
+    }
+}
+
+@keyframes girl-running {
+    100% {
+        margin-left: 1500px
+    }
+}
+
